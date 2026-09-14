@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>For ONLY my beloved angel </title>
+
+    <style>
+        body {
+             background-image: 
+                linear-gradient(rgba(255, 230, 240, 0.45), rgba(255, 230, 240, 0.45)),
+                url("Mizisua.jpg");
+             background-size: cover;
+             background-position: center;
+             background-repeat: no-repeat;
+             background-attachment: fixed;
+
+             text-align: center; 
+             font-family: Arial, sans-serif; 
+             padding-top: 80px; 
+        }
+
+        input {
+            padding: 12px;
+            font-size: 18px;
+            border: 2px solid pink;
+            border-radius: 8px;
+        }
+
+        button {
+            padding: 12px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            background-color: #ff69b4;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ff1493;
+        }
+
+        #output {
+            margin: 40px auto;
+            width: fit-content;
+            text-align: left;
+            font-family: "Courier New", monospace;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>What's your name oh ho ho hooo</h1>
+
+    <input type="text" id="name" placeholder="Enter your name">
+
+    <button onclick="checkName()">Enter</button>
+
+    <pre id="output"></pre>
+
+<audio id="music" loop>
+    <source src="song.mp3" type="audio/mpeg">
+</audio>
+
+    <script>
+
+        function checkName() {
+
+            let name = document.getElementById("name").value.trim();
+
+        if (name.toLowerCase() === "yai") {
+            
+            const music = document.getElementById("music");
+
+            music.currentTime = 0;
+            music.play();
+
+            document.getElementById("output").textContent = `
+OH MA GAH ITS MY PRECIOUS ANGEL HAII
+
+
+       I love you      I love you
+   Mi amor mi amor    <3 Mi amor Mi amor
+  Wo ai ni Wo ai ni Wo ai ni Wo ai ni <3
+ Ich liebe dich Ich liebe dich Ich liebe dich
+  Je t'aime Je t'aime Je t'aime Je t'aime
+   Te amo Te amo Te amo Te amo Te amo
+      Aishiteru Aishiteru Aishiteru
+           Saranghae Saranghae
+                My love
+
+
+I love you oodles and boodles, I'll keep loving you in every universe and in every lifetime until time reaches its end.
+
+Until all infinite things becomes finite as my love for you is infinite, you're the most precious person I've met,
+
+you're beautiful both inside and outside and I'll always cherish you with all my being all my life force. I WANTED TO MAKE THIS MORE PRETTIER AND COMPLICATED BHASBH
+
+All the best for school, I know it might be nervous but you got this.Youre so preciousz amazing and lovable everyone will have fun around you AND I'LL BE RIGHT HERE TEXT ME ANYTHING HAPPENS
+`;
+
+            }
+
+            else {
+
+                document.getElementById("output").textContent =
+                    "Womp womp AHAHAHHAHAAH GET OUT 😡";
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
